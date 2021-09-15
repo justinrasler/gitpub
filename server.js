@@ -7,7 +7,7 @@ app.get('/', (req,res) => {
     res.send("welcome to the GitPub app!")
 })
 app.get('/drinks', (req,res) => {
-    res.send(drinks)
+    res.render('drinks_index.ejs')
 })
 
 app.listen(port,() => {
