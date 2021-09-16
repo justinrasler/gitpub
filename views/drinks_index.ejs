@@ -2,8 +2,8 @@
 <html lang="en">
     <style type="text/css">
         body{
-            background-color: maroon;
-            color: gold;
+            background-color: blanchedalmond;
+            color: teal;
         }
     </style>
 <head>
@@ -12,5 +12,18 @@
 </head>
 <body>
     <h1>Welcome to GitPub</h1>
+
+</nav>
+<ul>
+    <% for(let i = 0; i < allDrinks.length; i++){ %>
+
+        <li>
+            <a href="/drinks/<%= i %>">
+                <%= allDrinks[i].name %>
+            </a>
+        </li>
+
+    <% } %>
+</ul>
 </body>
 </html>
