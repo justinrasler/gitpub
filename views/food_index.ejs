@@ -4,7 +4,7 @@
         body{
             background-color: blanchedalmond;
             color: teal;
-            padding-left: 550px;
+          padding-left: 550px;
         }
         a{
             font-size: 20px;
@@ -19,21 +19,21 @@
     <title>GitPub</title>
 </head>
 <body>
-    <h1>Welcome to GitPub</h1>
+    <h1>Welcome to GitPub Kitchen</h1>
 
 </nav>
 <ul>
-    <% for(let i = 0; i < allDrinks.length; i++){ %>
+    <% for(let i = 0; i < allFoods.length; i++){ %>
 
         <li>
-            <a href="/drinks/<%= i %>">
-                <%= allDrinks[i].name %>
+            <a href="/food/<%= i %>">
+                <%= allFood[i].name %>
             </a>
             
         </li>
-        
+
     <% } %>
 </ul>
-<a href="/food/">Hungry?</a> 
+<a href="/drinks/">Thirsty?</a> 
 </body>
 </html>
