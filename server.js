@@ -21,7 +21,7 @@ app.get('/drinks/:id', (req,res) => {
 ///////////////////////////////
 
 app.get('/food/', (req,res) => {
-    res.render('food_index.ejs', {allFood: food})
+    res.render('food_index.ejs', {allFoods: food})
 })
 
 
